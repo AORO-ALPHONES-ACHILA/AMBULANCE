@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Ambulance Booking - Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="ambu.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ambulance Booking</h1>
+      <small>Quick responsive app for emergency</small>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Emergency</h2>
+        <p>Press the red button to auto-request nearest ambulance.</p>
+        <div class="center">
+          <button id="emergencyBtn" class="btn-danger">SOS</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Manual Booking</h2>
+        <label>Phone <input id="phone" placeholder="+2547..." /></label>
+        <label>Pickup <input id="pickup" placeholder="Current location or address" /></label>
+        <label>Destination <input id="destination" placeholder="Hospital name / address (optional)" /></label>
+        <div class="row">
+          <button id="bookBtn" class="btn-primary">Book Ambulance</button>
+          <button id="historyBtn" class="btn-plain">View History</button>
+        </div>
+      </section>
+
+      <section class="card" id="statusCard" style="display:none;">
+        <h2>Booking Status</h2>
+        <div id="statusArea">No active booking.</div>
+        <div id="driverArea"></div>
+      </section>
+
+      <section class="card" id="historyCard" style="display:none;">
+        <h2>History</h2>
+        <div id="historyList"></div>
+      </section>
+    </main>
+
+    <footer>
+    <small>Thanks for your effort to saving humanity</small>
+    </footer>
+  </div>
+
+  <script src="ambu.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* ambu.css */
+:root {
+    --red:#d32f2f;
+    --primary:#1976d2;
+    --muted:#666;
+  }
+  body { font-family: "Segoe UI", Roboto, Arial; margin:0; background:#f5f7fb; color:#222; }
+  .container { max-width:900px; margin:24px auto; padding:12px; }
+  header { text-align:left; margin-bottom:8px; }
+  .card { background:white; padding:16px; border-radius:8px; margin-bottom:14px; box-shadow:0 2px 8px rgba(10,10,20,0.04); }
+  .center { text-align:center; margin-top:12px; }
+  .btn-danger { background:var(--red); color:white; border:none; padding:18px 36px; border-radius:50%; font-size:18px; cursor:pointer; }
+  .btn-primary { background:var(--primary); color:white; border:none; padding:10px 14px; border-radius:6px; cursor:pointer; }
+  .btn-plain { background:transparent; border:1px solid #ddd; padding:8px 12px; border-radius:6px; cursor:pointer; }
+  label { display:block; margin-top:8px; font-size:14px; }
+  input { width:100%; padding:8px; margin-top:4px; box-sizing:border-box; border-radius:6px; border:1px solid #ddd; }
+  .row { display:flex; gap:8px; margin-top:12px; }
+  #statusArea { padding:6px 0; }
+  #historyList .item { border-bottom:1px dashed #eee; padding:8px 0; }
+  footer { text-align:center; color:var(--muted); margin-top:8px; font-size:13px;}
